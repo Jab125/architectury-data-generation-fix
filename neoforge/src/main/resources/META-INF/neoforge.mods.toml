@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+#issueTrackerURL = ""
+license = "LGPL-2.1+"
+
+[[mods]]
+modId = "architectury_data_generation_fix"
+version = "${version}"
+displayName = "Architectury Data Generation Fix"
+authors = "Jab125"
+description = '''
+A tweak to Data Generation so that the game correctly closes after data generation.
+'''
+#logoFile = ""
+
+[[dependencies.architectury_data_generation_fix]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.architectury_data_generation_fix]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "architectury_data_generation_fix.mixins.json"
+
+[features.architectury_data_generation_fix]
+javaVersion="[21,)"
