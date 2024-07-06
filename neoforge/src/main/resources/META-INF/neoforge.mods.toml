@@ -30,5 +30,8 @@ side = "BOTH"
 [[mixins]]
 config = "architectury_data_generation_fix.mixins.json"
 
+[[mixins]]
+config = "architectury_data_generation_fix_neoforge.mixins.json"
+
 [features.architectury_data_generation_fix]
 javaVersion="[21,)"
