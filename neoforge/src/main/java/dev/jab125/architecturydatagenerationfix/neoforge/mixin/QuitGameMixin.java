@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(DatagenModLoader.class)
 public class QuitGameMixin {
 	@Inject(method = "begin", at = @At("RETURN"))
-	static void architecturyDataGenerationFix$run(CallbackInfo ci) {
+	private static void architecturyDataGenerationFix$run(CallbackInfo ci) {
 		System.exit(0);
 	}
 }

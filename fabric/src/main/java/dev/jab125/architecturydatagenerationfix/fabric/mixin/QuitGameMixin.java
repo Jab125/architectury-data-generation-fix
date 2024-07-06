@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(value = FabricDataGenHelper.class, remap = false)
 public class QuitGameMixin {
 	@Inject(method = "run", at = @At("TAIL"))
-	static void architecturyDataGenerationFix$run(CallbackInfo ci) {
+	private static void architecturyDataGenerationFix$run(CallbackInfo ci) {
 		System.exit(0);
 	}
 }
